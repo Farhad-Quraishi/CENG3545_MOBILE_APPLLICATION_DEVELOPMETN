@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "739098496794",
+    "project_id": "instagrm-clone-6d8fc",
+    "storage_bucket": "instagrm-clone-6d8fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739098496794:android:63bb86a64b39dead52e6a3",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "739098496794-2r0r5jdl4c56og8inuf0a1n9sllnv28g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "d7584f75d83d439764e302d5ce140c2615513292"
+          }
+        },
+        {
+          "client_id": "739098496794-0hag9gp4kgrabmomf9iqkmvuq4gssntb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9MlGjRJoURtiXtZw8j8NK28uuDTHF_VM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "739098496794-0hag9gp4kgrabmomf9iqkmvuq4gssntb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
