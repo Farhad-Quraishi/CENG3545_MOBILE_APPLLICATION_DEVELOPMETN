@@ -4,6 +4,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -16,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class StartActivity extends AppCompatActivity {
     private ImageView logu;
     private LinearLayout linearLayout;
-    private Button register;
+    private Button signup;
     private Button login;
 
 
@@ -27,7 +28,7 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         logu = findViewById(R.id.logu);
         linearLayout = findViewById(R.id.linearLayout);
-        register = findViewById(R.id.register);
+        signup = findViewById(R.id.signup);
         login =findViewById(R.id.login);
 
 
@@ -37,6 +38,19 @@ public class StartActivity extends AppCompatActivity {
         animation.setFillAfter(false);
         animation.setAnimationListener(new MyAnimationListener());
         logu.setAnimation(animation);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this , SignupActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            }
+        });
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StartActivity.this , LoginActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            }
+        });
+
     }
     private class MyAnimationListener implements Animation.AnimationListener{
 
